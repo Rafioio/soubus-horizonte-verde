@@ -149,5 +149,40 @@
   body {
     background-color: var(--color-background);
     color: var(--color-foreground);
+    font-family: 'Inter', system-ui, sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@theme inline {
+  --color-primary-glow: var(--primary-glow);
+}
+
+@layer utilities {
+  .gradient-hero { background: var(--gradient-hero); }
+  .gradient-primary { background: var(--gradient-primary); }
+  .gradient-accent { background: var(--gradient-accent); }
+  .text-gradient {
+    background: var(--gradient-accent);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+  .glass {
+    background: oklch(0.21 0.05 295 / 60%);
+    backdrop-filter: blur(16px);
+    border: 1px solid oklch(1 0 0 / 8%);
+  }
+  .shadow-glow { box-shadow: var(--shadow-glow); }
+  .shadow-card { box-shadow: var(--shadow-card); }
+  .grid-bg {
+    background-image:
+      linear-gradient(oklch(0.78 0.2 130 / 6%) 1px, transparent 1px),
+      linear-gradient(90deg, oklch(0.42 0.16 300 / 8%) 1px, transparent 1px);
+    background-size: 48px 48px;
   }
 }
