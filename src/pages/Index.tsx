@@ -9,14 +9,14 @@ import {Team} from "@/components/soubus/Team"
 const Index = () => {
   return (
     <div className="min-h-screen bg-background selection:bg-accent">
-      <About />
-      <Survey />
       <Hero />
-      <Navbar />
+      <About />
       <Problem />
+      <Survey />
       <Solution />
-      <Footer />
+      <Navbar />
       <Team />
+      <Footer />
     </div>
   );
 };
