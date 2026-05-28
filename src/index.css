@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 280 10% 20%;
+
+    --card: 0 0% 98%;
+    --card-foreground: 280 10% 20%;
+
+    --popover: 0 0% 98%;
+    --popover-foreground: 280 10% 20%;
+
+    /* SouBus Purple */
+    --primary: 271 52% 30%;
+    --primary-foreground: 0 0% 100%;
+
+    /* SouBus Green */
+    --secondary: 82 68% 45%;
+    --secondary-foreground: 0 0% 10%;
+
+    --muted: 280 10% 95%;
+    --muted-foreground: 280 6% 45%;
+
+    --accent: 82 68% 45%;
+    --accent-foreground: 0 0% 10%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 0 0% 0% / 0.08;
+    --input: 0 0% 92%;
+    --ring: 271 52% 30%;
+
+    --radius: 0.875rem;
+
+    /* Sidebar */
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 280 10% 20%;
+    --sidebar-primary: 271 52% 30%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 82 68% 45%;
+    --sidebar-accent-foreground: 0 0% 10%;
+    --sidebar-border: 0 0% 0% / 0.08;
+    --sidebar-ring: 271 52% 30%;
+
+    /* Custom SouBus Tokens */
+    --soubus-purple: 271 52% 30%;
+    --soubus-purple-light: 271 52% 45%;
+    --soubus-green: 82 68% 45%;
+    --soubus-green-light: 82 68% 60%;
+
+    --shadow-soft: 0 10px 40px -15px rgba(0,0,0,0.12);
+    --shadow-glow: 0 20px 60px -20px rgba(74,36,115,0.3);
+
+    --gradient-primary: linear-gradient(
+      135deg,
+      rgb(74, 36, 115),
+      rgb(106, 58, 153)
+    );
+
+    --gradient-accent: linear-gradient(
+      135deg,
+      rgb(74, 36, 115),
+      rgb(141, 192, 37)
+    );
+  }
+
+  .dark {
+    --background: 265 30% 13%;
+    --foreground: 0 0% 98%;
+
+    --card: 265 25% 18%;
+    --card-foreground: 0 0% 98%;
+
+    --popover: 265 25% 18%;
+    --popover-foreground: 0 0% 98%;
+
+    --primary: 0 0% 98%;
+    --primary-foreground: 271 52% 30%;
+
+    --secondary: 265 15% 24%;
+    --secondary-foreground: 0 0% 98%;
+
+    --muted: 265 15% 24%;
+    --muted-foreground: 0 0% 70%;
+
+    --accent: 265 15% 24%;
+    --accent-foreground: 0 0% 98%;
+
+    --destructive: 0 63% 31%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 0 0% 100% / 0.08;
+    --input: 0 0% 100% / 0.12;
+    --ring: 271 52% 45%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-family: 'Inter', system-ui, sans-serif;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: 'Space Grotesk', sans-serif;
+  }
+}
+
+@layer utilities {
+  .gradient-primary {
+    background: var(--gradient-primary);
+  }
+
+  .gradient-accent {
+    background: var(--gradient-accent);
+  }
+
+  .text-gradient {
+    background: var(--gradient-accent);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+
+  .glass {
+    background: rgba(255,255,255,0.65);
+    backdrop-filter: blur(16px);
+    border: 1px solid rgba(0,0,0,0.08);
+  }
+
+  .shadow-glow {
+    box-shadow: var(--shadow-glow);
+  }
+
+  .shadow-soft {
+    box-shadow: var(--shadow-soft);
+  }
+
+  .grid-bg {
+    background-image:
+      linear-gradient(rgba(74,36,115,0.04) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(74,36,115,0.04) 1px, transparent 1px);
+    background-size: 48px 48px;
+  }
+
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+}
