@@ -7,7 +7,7 @@ export function Hero() {
       <div className="absolute inset-0 gradient-hero" />
       <div className="absolute inset-0 grid-bg opacity-60" />
       {/* Glow orbs */}
-      <div className="absolute -top-32 -left-20 h-96 w-96 rounded-full bg-primary/30 blur-3xl" />
+      <div className="absolute -top-32 -left-20 h-96 w-96 rounded-full bg-primary/15 blur-3xl" />
       <div className="absolute bottom-0 right-0 h-[28rem] w-[28rem] rounded-full bg-secondary/20 blur-3xl" />
 
       <div className="container relative mx-auto px-6 grid lg:grid-cols-2 gap-12 items-center py-20">
