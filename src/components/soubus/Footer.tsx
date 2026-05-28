@@ -31,7 +31,7 @@ export function Footer() {
         </div>
       </div>
       <div className="container mx-auto px-6 mt-10 pt-6 border-t border-border/40 flex flex-col sm:flex-row justify-between items-center gap-3 text-xs text-muted-foreground">
-        <div>© {new Date().getFullYear()} SouBus · Mobilidade inteligente para Belo Horizonte</div>
+        <div>© {new Date().getFullYear()} SouBus · soubusenterprise@gmail.com</div>
         <div>Projeto acadêmico · UFMG</div>
       </div>
     </footer>

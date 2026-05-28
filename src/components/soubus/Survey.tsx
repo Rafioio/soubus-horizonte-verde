@@ -2,7 +2,7 @@ import { ExternalLink, ClipboardList } from "lucide-react";
 import { Reveal } from "./Section";
 
 // <!-- SUBSTITUIR O LINK DO GOOGLE FORMS AQUI -->
-const GOOGLE_FORMS_URL = "https://forms.gle/SEU-LINK-AQUI";
+const GOOGLE_FORMS_URL = "https://forms.gle/9QuLrKEXaqbS3vk46";
 
 export function Survey() {
   return (
