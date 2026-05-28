@@ -38,7 +38,7 @@ export function Solution() {
                   </div>
                   {/* node */}
                   <div className="absolute left-6 lg:left-1/2 -translate-x-1/2 top-8">
-                    <div className="h-12 w-12 rounded-2xl gradient-primary grid place-items-center shadow-glow ring-4 ring-background">
+                    <div className="h-12 w-12 rounded-2xl gradient-primary grid place-items-center shadow-glow ring-4 ring-white">
                       <s.icon className="h-5 w-5 text-primary-foreground" />
                     </div>
                   </div>

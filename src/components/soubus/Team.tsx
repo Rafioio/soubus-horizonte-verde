@@ -33,7 +33,7 @@ export function Team() {
                 <div className="flex items-center gap-5">
                   <div className="relative">
                     <div className="absolute inset-0 gradient-primary rounded-full blur-md opacity-60 group-hover:opacity-100 transition-opacity" />
-                    <div className="relative h-20 w-20 rounded-full gradient-primary grid place-items-center text-2xl font-bold text-primary-foreground ring-4 ring-background"
+                    <div className="relative h-20 w-20 rounded-full gradient-primary grid place-items-center text-2xl font-bold text-primary-foreground ring-4 ring-white shadow-card"
                       style={{ fontFamily: "'Space Grotesk', sans-serif" }}
                     >
                       {m.initials}
